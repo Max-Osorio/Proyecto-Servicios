@@ -7,7 +7,7 @@ options {
 
     recursion yes;
     allow-recursion { localhost; allowed; };
-    listen-on port 53 { localhost; 192.168.50.248; };
+    listen-on port 53 { localhost; 192.168.50.5; };
     allow-query { localhost; allowed; };
     allow-transfer { none; };
 
@@ -16,11 +16,6 @@ options {
             8.8.8.8;
     };
 
-
-    //========================================================================
-    // If BIND logs error messages about the root key being expired,
-    // you will need to update your keys.  See https://www.isc.org/bind-keys
-    //========================================================================
     dnssec-validation auto;
 
     auth-nxdomain no;    # conform to RFC1035
