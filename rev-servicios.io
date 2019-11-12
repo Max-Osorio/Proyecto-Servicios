@@ -1,5 +1,5 @@
 $TTL    86400
-@       IN      SOA     ns1.servicios.io. root.servicios.io. (
+@       IN      SOA     dns.servicios.com. root.servicios.com. (
     2019061401   ; serial
     7200         ; refresh after 2 hours 
     3600         ; retry after 1 hour
@@ -7,9 +7,9 @@ $TTL    86400
     86400 )      ; minimum TTL of 1 day
 ;
 ; Primary nameserver
-@       IN      NS      ns1.servicios.io.
+@       IN      NS      dns.servicios.com.
 ; PTR records for reverse lookup
-248     IN      PTR     ns1.servicios.io.
-2       IN      PTR     www.servicios.io.
-3       IN      PTR     ftp.servicios.io.
-4       IN      PTR     cliente.servicios.io.
+5       IN      PTR     dns.servicios.com.
+2       IN      PTR     www.servicios.com.
+3       IN      PTR     ftp.servicios.com.
+4       IN      PTR     cliente.servicios.com.
