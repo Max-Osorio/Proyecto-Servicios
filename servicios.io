@@ -1,5 +1,5 @@
 $TTL    86400
-@       IN      SOA     ns1.servicios.io. root.servicios.io. (
+@       IN      SOA     dns.servicios.com. root.servicios.com. (
                 2019061401   ; serial
                 7200         ; refresh after 2 hours 
                 3600         ; retry after 1 hour
@@ -7,10 +7,10 @@ $TTL    86400
                 86400 )      ; minimum TTL of 1 day
 ;
 ; Primary Nameserver
-        IN      NS      ns1.servicios.io.
+        IN      NS      dns.servicios.com.
 ;
 ; Define A records (forward lookups)
-ns1     IN      A       192.168.50.248
+dns     IN      A       192.168.50.5
 www     IN      A       192.168.50.2
 ftp     IN      A       192.168.50.3
 cliente     IN      A       192.168.50.4
